@@ -19,7 +19,7 @@ export class AppComponent {
   }
 
   Limpiar(){
-    this.edadDos = null;
+    this.edadUno = null;
     this.edadDos = null;
     this.promedio = null;
     this.suma = null;
