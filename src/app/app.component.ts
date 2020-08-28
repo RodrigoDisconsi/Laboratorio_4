@@ -7,4 +7,21 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Lab4App';
+
+  public edadUno:number;
+  public edadDos:number;
+  public promedio:number;
+  public suma:number;
+
+  Calcular(){
+    this.suma = this.edadUno + this.edadDos;
+    this.promedio = (this.suma)/2;
+  }
+
+  Limpiar(){
+    this.edadDos = null;
+    this.edadDos = null;
+    this.promedio = null;
+    this.suma = null;
+  }
 }
