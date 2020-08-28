@@ -10,8 +10,8 @@ export class AppComponent {
 
   public edadUno:number;
   public edadDos:number;
-  public promedio:number;
-  public suma:number;
+  public promedio:number = null;
+  public suma:number = null;
 
   Calcular(){
     this.suma = this.edadUno + this.edadDos;

@@ -4,11 +4,15 @@
 <label>Edad dos</label>
 <input type="number" [(ngModel)]="edadDos">
 <br>
-<label>Promedio</label>
-<input type="number" [(ngModel)]="promedio">
+<div *ngIf="promedio">
+  <label>Promedio</label>
+  <input type="number" [(ngModel)]="promedio">
+</div>
 <br>
-<label>Suma   </label>
-<input type="number" [(ngModel)]="suma">
+<div *ngIf="suma">
+  <label>Suma   </label>
+  <input type="number" [(ngModel)]="suma">
+</div>
 <br>
 <button (click)="Calcular()">Calcular</button>
 <button (click)="Limpiar()">Limpiar</button>
