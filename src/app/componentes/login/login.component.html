@@ -1,1 +1,13 @@
-<p>login works!</p>
+<div class="contenedorFlex">
+    <div class="contenedor">
+        <label for="user">Usuario</label>
+        <br>
+        <input type="text" class="sinError" [(ngModel)]="user.nombre" placeholder="usuario">
+        <br>
+        <label for="pass">Password</label>
+        <br>
+        <input type="password" class="sinError" [(ngModel)]="user.password" placeholder="Password">
+        <br>
+        <input type="button" value="Ingresar" (click)="login()">
+    </div>
+</div>

@@ -7,14 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BienvenidaComponent implements OnInit {
 
-  public ejemplo = "Hola mundo";
+  // public ejemplo = "Hola mundo";
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  PruebaClick(){
+  // PruebaClick(){
     
-  }
+  // }
 
 }
