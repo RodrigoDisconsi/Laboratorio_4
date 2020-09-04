@@ -27,6 +27,7 @@ export class LoginComponent implements OnInit {
     if(this.user.nombre == "rdisconsi" && this.user.password == "123456"){
       this.route.navigateByUrl("/ejercicio1");
       this.miservicio.usuario = this.user;
+      window.localStorage.setItem("user", this.user.nombre);
     }
     else{
       this.route.navigateByUrl("error");

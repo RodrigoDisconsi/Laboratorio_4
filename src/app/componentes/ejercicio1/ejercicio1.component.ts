@@ -16,6 +16,7 @@ export class Ejercicio1Component implements OnInit {
 
   ngOnInit(): void {
     console.log(this.miservicio.usuario);
+    console.log(window.localStorage.getItem("user"));
   }
 
 
