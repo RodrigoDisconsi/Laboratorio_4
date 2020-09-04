@@ -24,7 +24,7 @@ export class LoginComponent implements OnInit {
 
   login(){
     // console.log(this.user.nombre);
-    if(this.user.nombre == "admin" && this.user.password == "123456"){
+    if(this.user.nombre == "admin" && this.user.password == "admin"){
       this.route.navigateByUrl("/ejercicio1");
       this.miservicio.usuario = this.user;
       window.localStorage.setItem("user", this.user.nombre);
