@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MiservicioService } from '../../services/miservicio.service';
 
 @Component({
   selector: 'app-ejercicio1',
@@ -11,9 +12,10 @@ export class Ejercicio1Component implements OnInit {
   public edadDos:number;
   public promedio:number = null;
   public suma:number = null;
-  constructor() { }
+  constructor(private miservicio:MiservicioService) { }
 
   ngOnInit(): void {
+    console.log(this.miservicio.usuario);
   }
 
 

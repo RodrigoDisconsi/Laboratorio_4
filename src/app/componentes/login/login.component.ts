@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { User } from '../../clases/user';
 import { Router } from '@angular/router';
+import { MiservicioService } from '../../services/miservicio.service';
 
 
 @Component({
@@ -14,7 +15,7 @@ export class LoginComponent implements OnInit {
   public user:User;
 
 
-  constructor(private route: Router) { 
+  constructor(private route: Router, private miservicio:MiservicioService) { 
     this.user = new User();
   }
 
@@ -25,6 +26,7 @@ export class LoginComponent implements OnInit {
     // console.log(this.user.nombre);
     if(this.user.nombre == "rdisconsi" && this.user.password == "123456"){
       this.route.navigateByUrl("/ejercicio1");
+      this.miservicio.usuario = this.user;
     }
     else{
       this.route.navigateByUrl("error");
