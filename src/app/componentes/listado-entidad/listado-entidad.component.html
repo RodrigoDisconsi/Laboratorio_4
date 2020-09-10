@@ -1,0 +1,25 @@
+
+<table class="table table-striped" class="mat-elevation-z8" style="width: 100%; padding: 10px;">
+    <thead>
+        <tr>
+            <th style="text-align: left;">Email</th>
+            <th style="text-align: left;">Nombre</th>
+            <th style="text-align: left;">Apellido</th>
+            <th style="text-align: left;">Sexo</th>
+            <th style="text-align: left;">Imagen</th>
+            <th style="text-align: left;">FechaNac</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let dato of listadoDatos">
+            <td style="width: 30%;">{{dato.email}}</td>
+            <td style="width: 30%;">{{dato.Nombre}}</td>
+            <td style="width: 30%;">{{dato.Apellido}}</td>
+            <td style="width: 30%;">{{dato.Sexo}}</td>
+            <td style="width: 40%;">
+                <img [src]="dato.FotoPerfil" alt="" style="width: 50px; height: 50px;">
+            </td>
+            <td style="width: 30%;">{{dato.FechaNac}}</td>
+        </tr>
+    </tbody>
+</table>

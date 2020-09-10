@@ -18,7 +18,9 @@ import { ReactiveFormsModule } from '@angular/forms';
 //  } from '@angular/material';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatCardModule } from '@angular/material/card';
-
+import { ControlEntidadComponent } from './componentes/control-entidad/control-entidad.component';
+import { ListadoEntidadComponent } from './componentes/listado-entidad/listado-entidad.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -28,7 +30,9 @@ import { MatCardModule } from '@angular/material/card';
     LoginComponent,
     BienvenidaComponent,
     ErrorComponent,
-    Ejercicio1Component
+    Ejercicio1Component,
+    ControlEntidadComponent,
+    ListadoEntidadComponent
   ],
   imports: [
     BrowserModule,
@@ -38,6 +42,7 @@ import { MatCardModule } from '@angular/material/card';
     ReactiveFormsModule,
     MatFormFieldModule,
     MatCardModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
