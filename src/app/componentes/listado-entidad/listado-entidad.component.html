@@ -8,6 +8,7 @@
             <th style="text-align: left;">Sexo</th>
             <th style="text-align: left;">Imagen</th>
             <th style="text-align: left;">FechaNac</th>
+            <th style="text-align: left;"></th>
         </tr>
     </thead>
     <tbody>
@@ -20,6 +21,9 @@
                 <img [src]="dato.FotoPerfil" alt="" style="width: 50px; height: 50px;">
             </td>
             <td style="width: 30%;">{{dato.FechaNac}}</td>
+            <td style="width: 15%;">
+                <button (click)="mostrarDetalles(usuario)">Seleccionar</button>
+            </td>
         </tr>
     </tbody>
 </table>

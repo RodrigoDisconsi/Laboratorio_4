@@ -10,6 +10,7 @@ export class ControlEntidadComponent implements OnInit {
 
   public datos: any;
   public trajoDatos:boolean = false;
+  public usuarioSeleccionado:any ;
 
   constructor(private miServ: MiservicioService) { }
 
@@ -18,6 +19,11 @@ export class ControlEntidadComponent implements OnInit {
       this.datos = datos;
       this.trajoDatos = true;
     });
+  }
+
+  usuarioSelec(usuario){
+    console.log(usuario);
+    this.usuarioSeleccionado = usuario;
   }
 
 

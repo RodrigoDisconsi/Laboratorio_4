@@ -21,6 +21,7 @@ import { MatCardModule } from '@angular/material/card';
 import { ControlEntidadComponent } from './componentes/control-entidad/control-entidad.component';
 import { ListadoEntidadComponent } from './componentes/listado-entidad/listado-entidad.component';
 import { HttpClientModule } from '@angular/common/http';
+import { DetalleEntidadComponent } from './componentes/detalle-entidad/detalle-entidad.component';
 
 
 
@@ -32,7 +33,8 @@ import { HttpClientModule } from '@angular/common/http';
     ErrorComponent,
     Ejercicio1Component,
     ControlEntidadComponent,
-    ListadoEntidadComponent
+    ListadoEntidadComponent,
+    DetalleEntidadComponent
   ],
   imports: [
     BrowserModule,
