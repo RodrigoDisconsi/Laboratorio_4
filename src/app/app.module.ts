@@ -24,6 +24,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { DetalleEntidadComponent } from './componentes/detalle-entidad/detalle-entidad.component';
 import { BotonEntidadComponent } from './componentes/boton-entidad/boton-entidad.component';
 import { MaterialModule } from '../app/material.module';
+import { CabeceraComponent } from './componentes/cabecera/cabecera.component';
 
 
 @NgModule({
@@ -36,7 +37,8 @@ import { MaterialModule } from '../app/material.module';
     ControlEntidadComponent,
     ListadoEntidadComponent,
     DetalleEntidadComponent,
-    BotonEntidadComponent
+    BotonEntidadComponent,
+    CabeceraComponent
   ],
   imports: [
     BrowserModule,

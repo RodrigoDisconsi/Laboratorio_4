@@ -1,9 +1,8 @@
-<h1>Parte 1</h1>
 <div class="contenedor">
     <div class="contenedorTable" *ngIf="this.trajoDatos">
         <app-listado-entidad [listadoDatos]="datos" (usuarioseleccionado)="usuarioSelec($event)"></app-listado-entidad>
     </div>
-    <div class="contenedorTableBorrar" *ngIf="this.listaAux">
+    <div class="contenedorTableBorrar" *ngIf="this.listaAux.length > 0">
         <app-listado-entidad [listadoDatos]="this.listaAux" (usuarioseleccionado)="usuarioSelec($event)"></app-listado-entidad>
     </div>
     <div class="contenedorDetalle">
