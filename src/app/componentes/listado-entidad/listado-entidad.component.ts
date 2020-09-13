@@ -11,16 +11,15 @@ export class ListadoEntidadComponent implements OnInit {
   @Output() usuarioseleccionado = new EventEmitter<any>();
 
 
-  constructor() { }
+  constructor() { 
+  }
 
   ngOnInit(): void {
-    console.log(this.listadoDatos);
+    
   }
 
   mostrarDetalles(usuario){
-    console.log(usuario);
-    // console.log("HOLAA");
-    // this.usuarioseleccionado.emit(usuario);
+    this.usuarioseleccionado.emit(usuario);
   }
 
 }

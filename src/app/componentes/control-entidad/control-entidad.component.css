@@ -1,3 +1,13 @@
-.contenedor{
+.contenedorTable{
     width: 50%;
+}
+
+.contenedorDetalle{
+    width: 50%;
+    margin-left: 5vh;
+}
+
+.contenedor{
+    display: flex;
+    justify-content: center;
 }

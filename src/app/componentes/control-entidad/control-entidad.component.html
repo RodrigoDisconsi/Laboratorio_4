@@ -1,5 +1,12 @@
 <h1>Parte 1</h1>
-<div class="contenedor" *ngIf="this.trajoDatos">
-    <app-listado-entidad [listadoDatos]="datos" (usuarioseleccionado)="usuarioSelec($event)"></app-listado-entidad>
-    <app-detalle-entidad [usuarioSeleccionado]="this.usuarioSeleccionado"></app-detalle-entidad>
+<div class="contenedor">
+    <div class="contenedorTable" *ngIf="this.trajoDatos">
+        <app-listado-entidad [listadoDatos]="datos" (usuarioseleccionado)="usuarioSelec($event)"></app-listado-entidad>
+    </div>
+    <div class="contenedorTableBorrar" *ngIf="this.listaAux">
+        <app-listado-entidad [listadoDatos]="this.listaAux" (usuarioseleccionado)="usuarioSelec($event)"></app-listado-entidad>
+    </div>
+    <div class="contenedorDetalle">
+        <app-detalle-entidad [usuario]="usuarioSeleccionado" (usuarioABorrar)="borrarUsuario($event)"></app-detalle-entidad>
+    </div>
 </div>

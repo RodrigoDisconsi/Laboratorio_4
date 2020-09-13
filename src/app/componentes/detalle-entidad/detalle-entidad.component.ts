@@ -1,4 +1,7 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Usuario } from '../../clases/usuario';
+
+
 
 @Component({
   selector: 'app-detalle-entidad',
@@ -7,11 +10,16 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class DetalleEntidadComponent implements OnInit {
 
-  @Input() usuarioSeleccionado: any;
+  @Input() usuario: Usuario = new Usuario();
+  @Output() usuarioABorrar = new EventEmitter<any>();
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  usuarioBorrar(usuario){
+    this.usuarioABorrar.emit(usuario);
   }
 
 }

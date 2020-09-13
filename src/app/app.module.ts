@@ -22,7 +22,8 @@ import { ControlEntidadComponent } from './componentes/control-entidad/control-e
 import { ListadoEntidadComponent } from './componentes/listado-entidad/listado-entidad.component';
 import { HttpClientModule } from '@angular/common/http';
 import { DetalleEntidadComponent } from './componentes/detalle-entidad/detalle-entidad.component';
-
+import { BotonEntidadComponent } from './componentes/boton-entidad/boton-entidad.component';
+import { MaterialModule } from '../app/material.module';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { DetalleEntidadComponent } from './componentes/detalle-entidad/detalle-e
     Ejercicio1Component,
     ControlEntidadComponent,
     ListadoEntidadComponent,
-    DetalleEntidadComponent
+    DetalleEntidadComponent,
+    BotonEntidadComponent
   ],
   imports: [
     BrowserModule,
@@ -44,7 +46,8 @@ import { DetalleEntidadComponent } from './componentes/detalle-entidad/detalle-e
     ReactiveFormsModule,
     MatFormFieldModule,
     MatCardModule,
-    HttpClientModule
+    HttpClientModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
