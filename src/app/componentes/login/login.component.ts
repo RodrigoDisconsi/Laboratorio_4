@@ -34,4 +34,9 @@ export class LoginComponent implements OnInit {
     }
   }
 
+  completarLogin(){
+    this.user.nombre = "admin";
+    this.user.password = "admin";
+  }
+
 }
